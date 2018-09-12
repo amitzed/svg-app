@@ -48,10 +48,6 @@ h1 {
   font-weight: normal;
 }
 
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
 
 .buttons {
   position: relative;
@@ -109,9 +105,55 @@ p {
   animation: shake 2.5s;
 }
 
-/* .boo-text .eye-color {
+
+@keyframes leftArm {
+  20% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+}
+.move-ghost .ghost-left-arm {
+  animation: leftArm 1.3s infinite;
+  transform-origin: 40px 65px;
+}
+
+@keyframes rightArm {
+  20% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+}
+.move-ghost .ghost-right-arm {
+  animation: rightArm 1.3s infinite;
+  transform-origin: 65px 40px;
   fill: #FF0000;
-} */
+}
+
+@keyframes eyes {
+  20% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+}
+.move-ghost .eye-color {
+  animation: rightArm 1.3s infinite;
+  transform-origin: 65px 40px;
+  fill: #FF0000;
+}
+.move-ghost .ghost-head {
+  animation: rightArm 1.3s infinite;
+  transform-origin: 65px 40px;
+}
+.move-ghost .ghost-torso {
+  animation: shake 2.5s infinite;
+}
+
 
 
 /* To invert motuh and shrink it */
@@ -194,6 +236,6 @@ p {
 }
 
 /* To make movement smoother in HTML wrapped it in a DIV container */
-.svg-container {
+.svg-ghost-container {
   perspective: 1000px;
 }
