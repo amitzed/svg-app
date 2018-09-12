@@ -1,11 +1,11 @@
-const btns = document.querySelectorAll("buttons button"); //so in html go inside the ".buttons" DIV and select any "buttons".
+const btns = document.querySelectorAll(".buttons button"); //so in html go inside the ".buttons" DIV and select any "buttons".
 
-const ghost = document.getElementClassName("ghost")[0];
+const ghost = document.getElementsByClassName("ghost")[0];
 // Above "ghost" refers to html SVG Class="ghost"
 
 // Setup Event Handling for all of the buttons so that when they get clicked, something is done in response:
   // Loop throught the collection of all of the buttons using a FOR loop:
-for (i = 0); i < btns; i++) {
+for (i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", manageGhostClasses);
 }
 

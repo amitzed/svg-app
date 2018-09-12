@@ -2,7 +2,11 @@ html, body {
   padding: 0;
   margin: 0;
   text-align: center;
-  background-color: #FFFF9D;
+  background-image: url("/images/home-interior.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .buttons button {
@@ -54,9 +58,61 @@ p {
   z-index: 10;
 }
 
-.lime-eyes .eye-color {
-  fill: #BEEB9F;
+/* .no-eyes .eye-color  */
+.red-eyes .eye-color {
+  fill: #FF0000;
 }
+
+/* Boo Spin Animation */
+@keyframes shake {
+  20% {
+    transform: rotateY(16deg) rotateX(10deg);
+  }
+
+  40% {
+    transform: rotateY(25deg) rotateX(10deg);
+  }
+
+  60% {
+    transform: rotateY(-10deg) rotateX(-10deg);
+  }
+
+  85% {
+    transform: rotateY(-10deg) rotateX(-16deg);
+  }
+}
+.boo-text {
+  animation: shake 2s;
+}
+.boo-text .boo {
+  fill: #FF0000;
+}
+.boo-text .boo {
+  transition: all .5s;
+}
+.boo-text:hover .boo {
+  transform: scale(1.5);
+}
+
+.boo-text .ghost-head {
+  animation: shake 1s;
+}
+
+.boo-text .ghost-left-arm {
+  animation: shake 1s;
+}
+.boo-text .ghost-right-arm {
+  animation: shake 1s;
+}
+
+.boo-text .ghost-torso {
+  animation: shake 2.5s;
+}
+
+/* .boo-text .eye-color {
+  fill: #FF0000;
+} */
+
 
 /* To invert motuh and shrink it */
 .sad .mouth {
