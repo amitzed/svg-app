@@ -1,24 +1,23 @@
-# README
-test
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# [SVG-App: Haunted House](https://svg-app.herokuapp.com/)
+##### Please click link/app-name above to see Heroku deployment.  
+<br/>
+<p align="center">
+  <img src="svg1.png" width="650" title="hover text">
+</p>
 
-Things you may want to cover:
+<p align="center">
+  <img src="svg2.png" width="200" title="hover text">
+  <img src="svg3.png" width="200" title="hover text">
+</p>
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+### Technologies Used:
+##### SVG-edit - To Draw as Opposed to using Adobe Illustrator
+##### Ruby on Rails was only used in order to deploy to Heroku.
+##### Heroku
 
-* Database creation
 
-* Database initialization
+#### This simple SVG-based app was created to have some free fun outside of using Adobe Illustrator, utilizing instead SVG-edit to draw the ghost and person, and then animating it using CSS and Javascript.  Written using Javascript, CSS and HTML.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### [Amit](https://amitzaman.com/)
